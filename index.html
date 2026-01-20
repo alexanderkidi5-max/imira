@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Biographie de ILUNGA WA ILUNGA Miriam</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #ffffff);
+      color: #333;
+    }
+    h1, h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+    header {
+      background: linear-gradient(135deg, #007bff, #6f42c1);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+    nav button {
+      border-radius: 30px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    nav button:hover {
+      transform: scale(1.1);
+    }
+    section {
+      margin: 60px auto;
+      max-width: 900px;
+    }
+    .photo-gallery {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 10px;
+    }
+    .photo-gallery figure {
+      flex: 0 0 auto;
+      text-align: center;
+    }
+    .photo-gallery img {
+      border-radius: 15px;
+      max-height: 250px;
+      transition: transform 0.3s ease;
+    }
+    .photo-gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #6f42c1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background: #007bff;
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      border: none;
+      font-size: 22px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    #backToTop:hover {
+      background: #6f42c1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header>
+    <img src="images/profil.jpg" alt="Photo de profil" class="profile-pic">
+    <h1>ILUNGA WA ILUNGA Miriam</h1>
+    <nav class="mt-3">
+      <button class="btn btn-light m-1" onclick="scrollToSection('bio')">Biographie</button>
+      <button class="btn btn-warning m-1" onclick="scrollToSection('photos')">Photos</button>
+      <button class="btn btn-info m-1" onclick="scrollToSection('proches')">Proches</button>
+    </nav>
+  </header>
+
+  <!-- Biographie -->
+  <section id="bio">
+    <h2 class="text-primary">À propos de ILUNGA WA ILUNGA Miriam</h2>
+    <p>
+      ILUNGA WA ILUNGA Miriam est une étudiante en Préparatoire à l'<strong>École Supérieure des Ingénieurs Industriels (ESI) de l’Université de Lubumbashi. </strong>, née le <strong>16 Aout 2004</strong> à Lubumbashi, dans une famille chrétienne, elle incarne les valeurs de discipline, de persévérance et de foi qui ont marqué son parcours scolaire et personnel.
+    </p>
+    <p>
+      Durant l’année scolaire 2024-2025, elle a obtenu son Diplôme d’État en Électricité au Complexe Scolaire P.P. UNILU, témoignant de son engagement et de son intérêt pour les sciences techniques. Son orientation vers les études d’ingénierie industrielle traduit une volonté affirmée de contribuer au développement technologique et industriel de la République Démocratique du Congo.
+    </p>
+    <p>
+      En rejoignant l’ESI, Miriam poursuit son ambition de se former dans un environnement académique exigeant, où elle développe des compétences en mathématiques, en physique et en sciences appliquées, bases essentielles pour son futur parcours d’ingénieure. Elle se distingue par son sérieux, son esprit d’analyse et sa détermination à relever les défis liés à la formation scientifique.
+    </p>
+<p>
+      Au-delà de son engagement académique, Miriam reste attachée aux valeurs de sa famille et de sa communauté, cherchant à allier excellence intellectuelle et responsabilité sociale. Son parcours illustre la jeunesse congolaise qui aspire à bâtir un avenir meilleur par le savoir et l’innovation.
+    </p>
+
+    <button id="downloadBio" class="btn btn-outline-primary">Télécharger ma biographie</button>
+  </section>
+
+  <!-- Photos -->
+  <section id="photos">
+    <h2 class="text-warning">Galerie de photos</h2>
+    <div class="photo-gallery">
+      <figure>
+        <img src="images/miriam1.jpg" alt="Enfance">
+      </figure>
+      <figure>
+        <img src="images/miriam2.jpg" alt="Adolescence">
+      </figure>
+      <figure>
+        <img src="images/miriam3.jpg" alt="Vie scolaire">
+      </figure>
+      <figure>
+        <img src="images/miriam4.jpg" alt="Famille">
+      </figure>
+      <figure>
+        <img src="images/miriam5.jpg" alt="Aujourd'hui">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Proches -->
+  <section id="proches">
+    <h2 class="text-info">Tableau</h2>
+    <table class="table table-hover">
+      <thead class="table-primary">
+        <tr>
+          <th>Colonne 1</th>
+          <th>Colonne 2</th>
+          <th>Colonne 3</th>
+          <th>Colonne 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td></td><td></td><td></td></tr>
+        <tr><td>2</td><td></td><td></td><td></td></tr>
+        <tr><td>3</td><td></td><td></td><td></td></tr>
+        <tr><td>4</td><td></td><td></td><td></td></tr>
+        <tr><td>5</td><td></td><td></td><td></td></tr>
+        <tr><td>6</td><td></td><td></td><td></td></tr>
+        <tr><td>7</td><td></td><td></td><td></td></tr>
+        <tr><td>8</td><td></td><td></td><td></td></tr>
+        <tr><td>9</td><td></td><td></td><td></td></tr>
+        <tr><td>10</td><td></td><td></td><td></td></tr>
+        <tr><td>11</td><td></td><td></td><td></td></tr>
+        <tr><td>12</td><td></td><td></td><td></td></tr>
+        <tr><td>13</td><td></td><td></td><td></td></tr>
+        <tr><td>14</td><td></td><td></td><td></td></tr>
+        <tr><td>15</td><td></td><td></td><td></td></tr>
+        <tr><td>16</td><td></td><td></td><td></td></tr>
+
+              </tbody>
+    </table>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2026 - Site biographique de ILUNGA WA ILUNGA Miriam</p>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <button id="backToTop">↑</button>
+
+  <!-- Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Télécharger biographie
+      const downloadBtn = document.getElementById("downloadBio");
+      downloadBtn.addEventListener("click", function() {
+        const bioText = document.querySelector("#bio").innerText;
+        const blob = new Blob([bioText], { type: "text/plain" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "ILUNGA-WA-ILUNGA-Miriam.txt";
+        link.click();
+      });
+
+      // Bouton retour en haut
+      const backToTopBtn = document.getElementById("backToTop");
+      window.addEventListener("scroll", function() {
+        if (window.scrollY > 200) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      });
+      backToTopBtn.addEventListener("click", function()
